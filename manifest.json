@@ -1,0 +1,25 @@
+  {
+    "name": "Block The Spoiler",
+    "version": "0.0.1",
+    "description": "익스트림무비 게시판 제목에 테넷 키워드가 들어가면 검게 처리합니다. ",
+	
+
+    "permissions": [
+		"*://extmovie.com/*" 
+    ],
+    "content_scripts": [
+		{
+			"matches": [
+				"*://extmovie.com/*"
+			],
+			"js": [
+				"src/inject.js"
+			]
+		}
+    ],
+	
+
+    "manifest_version": 2
+  }
+  
+  
